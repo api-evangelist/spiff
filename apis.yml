@@ -1,11 +1,33 @@
 aid: spiff
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/spiff.png
 name: Spiff
-description: Spiff is a company surfaced as a portfolio company of lightspeed-venture-partners, norwest-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Spiff was a sales commission and incentive compensation management (ICM)
+  platform that automated commission calculations, gave sales reps real-time
+  earnings visibility, and streamlined finance-side reconciliation for revenue
+  teams. Founded in Utah and backed by Lightspeed Venture Partners and Norwest
+  Venture Partners, Spiff was acquired by Salesforce in 2024 and folded into
+  Sales Cloud as "Salesforce Spiff" / Incentive Compensation Management. As of
+  this profile the standalone spiff.com and app.spiff.com properties redirect
+  to salesforce.com, and no independent Spiff public API, developer portal,
+  documentation, or OpenAPI surface remains discoverable — its capabilities are
+  now delivered through the Salesforce platform.
 url: https://raw.githubusercontent.com/api-evangelist/spiff/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
+x-status: acquired
+x-acquired-by: salesforce
 x-backed-by:
 - lightspeed-venture-partners
 - norwest-venture-partners
@@ -13,9 +35,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Sales
+- Commissions
+- Incentive Compensation
+- Compensation Management
+- Revenue Operations
+- Sales Performance
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +52,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/spiff-domain-security.yml
 - type: Website
   url: https://spiff.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
