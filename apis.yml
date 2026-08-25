@@ -12,17 +12,13 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/spiff.png
 name: Spiff
-description: >-
-  Spiff was a sales commission and incentive compensation management (ICM)
-  platform that automated commission calculations, gave sales reps real-time
-  earnings visibility, and streamlined finance-side reconciliation for revenue
-  teams. Founded in Utah and backed by Lightspeed Venture Partners and Norwest
-  Venture Partners, Spiff was acquired by Salesforce in 2024 and folded into
-  Sales Cloud as "Salesforce Spiff" / Incentive Compensation Management. As of
-  this profile the standalone spiff.com and app.spiff.com properties redirect
-  to salesforce.com, and no independent Spiff public API, developer portal,
-  documentation, or OpenAPI surface remains discoverable — its capabilities are
-  now delivered through the Salesforce platform.
+description: Spiff was a sales commission and incentive compensation management (ICM) platform that automated commission
+  calculations, gave sales reps real-time earnings visibility, and streamlined finance-side reconciliation for revenue
+  teams. Founded in Utah and backed by Lightspeed Venture Partners and Norwest Venture Partners, Spiff was acquired
+  by Salesforce in 2024 and folded into Sales Cloud as "Salesforce Spiff" / Incentive Compensation Management. As
+  of this profile the standalone spiff.com and app.spiff.com properties redirect to salesforce.com, and no independent
+  Spiff public API, developer portal, documentation, or OpenAPI surface remains discoverable — its capabilities
+  are now delivered through the Salesforce platform.
 url: https://raw.githubusercontent.com/api-evangelist/spiff/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -35,7 +31,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-08-21'
 tags:
 - Company
 - Sales
@@ -52,6 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/salesforce/
+  name: Salesforce
+  x-relationship: acquisition
+  x-generated-by: salesforce-family:2026-08-21
+  x-acquired: 2024
 - type: DomainSecurity
   url: security/spiff-domain-security.yml
 - type: Website
@@ -61,3 +63,6 @@ x-enrichment:
   status: minimal
   artifacts_added: 1
   pass: local-v1
+x-parent: salesforce
+x-relationship: acquisition
+x-acquired: 2024
